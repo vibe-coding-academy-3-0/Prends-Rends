@@ -32,12 +32,19 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x gradlew || true
 
+      - name: Create fallback .env file
+        run: |
+          touch .env
+          echo "GEMINI_API_KEY=" > .env
+
       - name: Build Android APK
+        env:
+          GRADLE_OPTS: "-Dorg.gradle.jvmargs=-Xmx3g -XX:MaxMetaspaceSize=1g"
         run: |
           if [ -f "./gradlew" ]; then
-            ./gradlew assembleDebug --no-daemon --no-configuration-cache --stacktrace
+            ./gradlew assembleDebug --no-daemon --stacktrace
           else
-            gradle assembleDebug --no-daemon --no-configuration-cache --stacktrace
+            gradle assembleDebug --no-daemon --stacktrace
           fi
 
       - name: Locate Generated APK
