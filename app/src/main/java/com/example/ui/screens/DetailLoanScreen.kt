@@ -22,16 +22,16 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.Chat
+import androidx.compose.material.icons.automirrored.filled.Message
+import androidx.compose.material.icons.automirrored.filled.Undo
 import androidx.compose.material.icons.filled.CalendarToday
 import androidx.compose.material.icons.filled.Call
-import androidx.compose.material.icons.filled.Chat
 import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Edit
-import androidx.compose.material.icons.filled.Message
 import androidx.compose.material.icons.filled.PermMedia
 import androidx.compose.material.icons.filled.Person
-import androidx.compose.material.icons.filled.Undo
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -291,7 +291,7 @@ fun DetailLoanScreen(
                                         .weight(1f)
                                         .testTag("action_sms_contact")
                                 ) {
-                                    Icon(imageVector = Icons.Default.Message, contentDescription = "SMS", modifier = Modifier.size(16.dp))
+                                    Icon(imageVector = Icons.AutoMirrored.Filled.Message, contentDescription = "SMS", modifier = Modifier.size(16.dp))
                                     Spacer(modifier = Modifier.width(4.dp))
                                     Text("SMS", fontSize = 11.sp)
                                 }
@@ -312,7 +312,7 @@ fun DetailLoanScreen(
                                         .weight(1f)
                                         .testTag("action_whatsapp_contact")
                                 ) {
-                                    Icon(imageVector = Icons.Default.Chat, contentDescription = "WhatsApp", modifier = Modifier.size(16.dp))
+                                    Icon(imageVector = Icons.AutoMirrored.Filled.Chat, contentDescription = "WhatsApp", modifier = Modifier.size(16.dp))
                                     Spacer(modifier = Modifier.width(4.dp))
                                     Text("WhatsApp", fontSize = 11.sp)
                                 }
@@ -401,7 +401,7 @@ fun DetailLoanScreen(
                         .testTag("toggle_returned_detail_button")
                 ) {
                     Icon(
-                        imageVector = if (loan.isReturned) Icons.Default.Undo else Icons.Default.CheckCircle,
+                        imageVector = if (loan.isReturned) Icons.AutoMirrored.Filled.Undo else Icons.Default.CheckCircle,
                         contentDescription = null
                     )
                     Spacer(modifier = Modifier.width(8.dp))

@@ -17,12 +17,12 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.Undo
 import androidx.compose.material.icons.filled.CalendarToday
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.Mic
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.PhotoCamera
-import androidx.compose.material.icons.filled.Undo
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
@@ -132,10 +132,11 @@ fun LoanCard(
                 }
 
                 // Thumbnail if photo exists
-                if (!loan.photoPath.isNull_or_blank() && File(loan.photoPath).exists()) {
+                val cardPhoto = loan.photoPath
+                if (!cardPhoto.isNullOrBlank() && File(cardPhoto).exists()) {
                     Spacer(modifier = Modifier.width(10.dp))
                     AsyncImage(
-                        model = File(loan.photoPath),
+                        model = File(cardPhoto),
                         contentDescription = "Photo justificative",
                         contentScale = ContentScale.Crop,
                         modifier = Modifier
@@ -277,7 +278,7 @@ fun LoanCard(
                         modifier = Modifier.testTag("toggle_returned_button_${loan.id}")
                     ) {
                         Icon(
-                            imageVector = Icons.Default.Undo,
+                            imageVector = Icons.AutoMirrored.Filled.Undo,
                             contentDescription = null,
                             modifier = Modifier.size(14.dp)
                         )
