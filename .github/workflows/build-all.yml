@@ -32,38 +32,12 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x gradlew || true
 
-      - name: Create fallback .env and google-services.json
+      - name: Create fallback configuration files
         run: |
           touch .env
           echo "GEMINI_API_KEY=" > .env
           if [ ! -f "app/google-services.json" ]; then
-            cat <<'EOF' > app/google-services.json
-{
-  "project_info": {
-    "project_number": "1234567890",
-    "project_id": "prends-et-rends-app",
-    "storage_bucket": "prends-et-rends-app.appspot.com"
-  },
-  "client": [
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:1234567890:android:abcdef1234567890",
-        "android_client_info": {
-          "package_name": "com.aistudio.prendsetrends.app"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "dummy_api_key_placeholder"
-        }
-      ],
-      "services": {}
-    }
-  ],
-  "configuration_version": "1"
-}
-EOF
+            echo '{"project_info":{"project_number":"1234567890","project_id":"prends-et-rends-app","storage_bucket":"prends-et-rends-app.appspot.com"},"client":[{"client_info":{"mobilesdk_app_id":"1:1234567890:android:abcdef1234567890","android_client_info":{"package_name":"com.aistudio.prendsetrends.app"}},"oauth_client":[],"api_key":[{"current_key":"dummy_api_key_placeholder"}],"services":{}}],"configuration_version":"1"}' > app/google-services.json
           fi
 
       - name: Build Android APK
