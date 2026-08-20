@@ -1,0 +1,6 @@
+{
+  "name": "Prends & Rends",
+  "description": "Application fluide et moderne pour suivre les objets et l'argent prêtés ou empruntés avec contacts, photo, notes vocales et rappels.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

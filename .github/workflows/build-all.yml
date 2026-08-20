@@ -1,0 +1,99 @@
+name: Build & Package Prends & Rends (Android & iOS)
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-android:
+    name: 🤖 Build Android APK
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v3
+
+      - name: Make gradlew executable
+        run: chmod +x gradlew || true
+
+      - name: Build Android APK
+        run: |
+          if [ -f "./gradlew" ]; then
+            ./gradlew assembleDebug --no-daemon --stacktrace
+          else
+            gradle assembleDebug --no-daemon --stacktrace
+          fi
+
+      - name: Locate Generated APK
+        id: find_apk
+        run: |
+          APK_PATH=$(find app/build/outputs/apk -name "*.apk" | head -n 1)
+          echo "Found APK: $APK_PATH"
+          echo "apk_path=$APK_PATH" >> $GITHUB_OUTPUT
+
+      - name: Upload Android APK Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: PrendsEtRends-Android-APK
+          path: ${{ steps.find_apk.outputs.apk_path }}
+          if-no-files-found: error
+          retention-days: 14
+
+  build-ios:
+    name: 🍎 Build iOS IPA (SwiftUI Natif)
+    runs-on: macos-14
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Show Xcode Version
+        run: xcodebuild -version
+
+      - name: Build iOS Application (Unsigned)
+        run: |
+          xcodebuild \
+            -project iosApp/PrendsEtRends.xcodeproj \
+            -scheme PrendsEtRends \
+            -configuration Release \
+            -sdk iphoneos \
+            -derivedDataPath build/DerivedData \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            build
+
+      - name: Package into Unsigned IPA
+        run: |
+          mkdir -p build/Payload
+          APP_PATH=$(find build/DerivedData/Build/Products/Release-iphoneos -name "*.app" -type d | head -n 1)
+          echo "Application package found at: $APP_PATH"
+          cp -R "$APP_PATH" build/Payload/
+          cd build
+          zip -qr PrendsEtRends-Unsigned.ipa Payload
+          cd ..
+          ls -lh build/PrendsEtRends-Unsigned.ipa
+
+      - name: Upload iOS IPA Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: PrendsEtRends-iOS-IPA
+          path: build/PrendsEtRends-Unsigned.ipa
+          if-no-files-found: error
+          retention-days: 14

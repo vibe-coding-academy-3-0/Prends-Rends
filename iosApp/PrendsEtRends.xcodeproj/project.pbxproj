@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10001012C68000100000001 /* PrendsEtRendsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000012C68000100000001 /* PrendsEtRendsApp.swift */; };
+		A10001022C68000100000002 /* LoanType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000022C68000100000002 /* LoanType.swift */; };
+		A10001032C68000100000003 /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000032C68000100000003 /* MediaItem.swift */; };
+		A10001042C68000100000004 /* LoanItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000042C68000100000004 /* LoanItem.swift */; };
+		A10001052C68000100000005 /* FilterEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000052C68000100000005 /* FilterEnums.swift */; };
+		A10001062C68000100000006 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000062C68000100000006 /* AppLanguage.swift */; };
+		A10001072C68000100000007 /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000072C68000100000007 /* AppStrings.swift */; };
+		A10001082C68000100000008 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000082C68000100000008 /* Colors.swift */; };
+		A10001092C68000100000009 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000092C68000100000009 /* StorageService.swift */; };
+		A100010A2C6800010000000A /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000A2C6800010000000A /* NotificationService.swift */; };
+		A100010B2C6800010000000B /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000B2C6800010000000B /* FirebaseService.swift */; };
+		A100010C2C6800010000000C /* AudioRecorderPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000C2C6800010000000C /* AudioRecorderPlayer.swift */; };
+		A100010D2C6800010000000D /* ContactPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000D2C6800010000000D /* ContactPicker.swift */; };
+		A100010E2C6800010000000E /* MediaPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000E2C6800010000000E /* MediaPicker.swift */; };
+		A100010F2C6800010000000F /* LoanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000F2C6800010000000F /* LoanViewModel.swift */; };
+		A10001102C68000100000010 /* StatusBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000102C68000100000010 /* StatusBadgeView.swift */; };
+		A10001112C68000100000011 /* LanguageSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000112C68000100000011 /* LanguageSelectorView.swift */; };
+		A10001122C68000100000012 /* SummaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000122C68000100000012 /* SummaryHeaderView.swift */; };
+		A10001132C68000100000013 /* AudioPlayerCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000132C68000100000013 /* AudioPlayerCardView.swift */; };
+		A10001142C68000100000014 /* LoanCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000142C68000100000014 /* LoanCardView.swift */; };
+		A10001152C68000100000015 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000152C68000100000015 /* DashboardView.swift */; };
+		A10001162C68000100000016 /* CreateEditLoanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000162C68000100000016 /* CreateEditLoanView.swift */; };
+		A10001172C68000100000017 /* DetailLoanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000172C68000100000017 /* DetailLoanView.swift */; };
+		A10001182C68000100000018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10000182C68000100000018 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A10000002C68000100000000 /* PrendsEtRends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrendsEtRends.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000012C68000100000001 /* PrendsEtRendsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrendsEtRendsApp.swift; sourceTree = "<group>"; };
+		A10000022C68000100000002 /* LoanType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanType.swift; sourceTree = "<group>"; };
+		A10000032C68000100000003 /* MediaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItem.swift; sourceTree = "<group>"; };
+		A10000042C68000100000004 /* LoanItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanItem.swift; sourceTree = "<group>"; };
+		A10000052C68000100000005 /* FilterEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterEnums.swift; sourceTree = "<group>"; };
+		A10000062C68000100000006 /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
+		A10000072C68000100000007 /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
+		A10000082C68000100000008 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		A10000092C68000100000009 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		A100000A2C6800010000000A /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		A100000B2C6800010000000B /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		A100000C2C6800010000000C /* AudioRecorderPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorderPlayer.swift; sourceTree = "<group>"; };
+		A100000D2C6800010000000D /* ContactPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPicker.swift; sourceTree = "<group>"; };
+		A100000E2C6800010000000E /* MediaPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPicker.swift; sourceTree = "<group>"; };
+		A100000F2C6800010000000F /* LoanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanViewModel.swift; sourceTree = "<group>"; };
+		A10000102C68000100000010 /* StatusBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBadgeView.swift; sourceTree = "<group>"; };
+		A10000112C68000100000011 /* LanguageSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectorView.swift; sourceTree = "<group>"; };
+		A10000122C68000100000012 /* SummaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryHeaderView.swift; sourceTree = "<group>"; };
+		A10000132C68000100000013 /* AudioPlayerCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerCardView.swift; sourceTree = "<group>"; };
+		A10000142C68000100000014 /* LoanCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCardView.swift; sourceTree = "<group>"; };
+		A10000152C68000100000015 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		A10000162C68000100000016 /* CreateEditLoanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEditLoanView.swift; sourceTree = "<group>"; };
+		A10000172C68000100000017 /* DetailLoanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLoanView.swift; sourceTree = "<group>"; };
+		A10000182C68000100000018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A10000192C68000100000019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A10002012C68000100000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A10003012C68000100000001 = {
+			isa = PBXGroup;
+			children = (
+				A10003022C68000100000002 /* PrendsEtRends */,
+				A10003092C68000100000009 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A10003022C68000100000002 /* PrendsEtRends */ = {
+			isa = PBXGroup;
+			children = (
+				A10003032C68000100000003 /* App */,
+				A10003042C68000100000004 /* Models */,
+				A10003052C68000100000005 /* I18n */,
+				A10003062C68000100000006 /* Theme */,
+				A10003072C68000100000007 /* Services */,
+				A10003082C68000100000008 /* ViewModels */,
+				A10003102C68000100000010 /* Views */,
+				A10000182C68000100000018 /* Assets.xcassets */,
+				A10000192C68000100000019 /* Info.plist */,
+			);
+			path = PrendsEtRends;
+			sourceTree = "<group>";
+		};
+		A10003032C68000100000003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A10000012C68000100000001 /* PrendsEtRendsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A10003042C68000100000004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A10000022C68000100000002 /* LoanType.swift */,
+				A10000032C68000100000003 /* MediaItem.swift */,
+				A10000042C68000100000004 /* LoanItem.swift */,
+				A10000052C68000100000005 /* FilterEnums.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A10003052C68000100000005 /* I18n */ = {
+			isa = PBXGroup;
+			children = (
+				A10000062C68000100000006 /* AppLanguage.swift */,
+				A10000072C68000100000007 /* AppStrings.swift */,
+			);
+			path = I18n;
+			sourceTree = "<group>";
+		};
+		A10003062C68000100000006 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				A10000082C68000100000008 /* Colors.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		A10003072C68000100000007 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A10000092C68000100000009 /* StorageService.swift */,
+				A100000A2C6800010000000A /* NotificationService.swift */,
+				A100000B2C6800010000000B /* FirebaseService.swift */,
+				A100000C2C6800010000000C /* AudioRecorderPlayer.swift */,
+				A100000D2C6800010000000D /* ContactPicker.swift */,
+				A100000E2C6800010000000E /* MediaPicker.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A10003082C68000100000008 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A100000F2C6800010000000F /* LoanViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A10003102C68000100000010 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A10003112C68000100000011 /* Components */,
+				A10000152C68000100000015 /* DashboardView.swift */,
+				A10000162C68000100000016 /* CreateEditLoanView.swift */,
+				A10000172C68000100000017 /* DetailLoanView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A10003112C68000100000011 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A10000102C68000100000010 /* StatusBadgeView.swift */,
+				A10000112C68000100000011 /* LanguageSelectorView.swift */,
+				A10000122C68000100000012 /* SummaryHeaderView.swift */,
+				A10000132C68000100000013 /* AudioPlayerCardView.swift */,
+				A10000142C68000100000014 /* LoanCardView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A10003092C68000100000009 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A10000002C68000100000000 /* PrendsEtRends.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A10004012C68000100000001 /* PrendsEtRends */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A10005012C68000100000001 /* Build configuration list for PBXNativeTarget "PrendsEtRends" */;
+			buildPhases = (
+				A10006012C68000100000001 /* Sources */,
+				A10002012C68000100000001 /* Frameworks */,
+				A10007012C68000100000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrendsEtRends;
+			productName = PrendsEtRends;
+			productReference = A10000002C68000100000000 /* PrendsEtRends.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A10000002C68000000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A10004012C68000100000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A10005002C68000100000000 /* Build configuration list for PBXProject "PrendsEtRends" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = fr;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				fr,
+				Base,
+			);
+			mainGroup = A10003012C68000100000001;
+			productRefGroup = A10003092C68000100000009 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A10004012C68000100000001 /* PrendsEtRends */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A10007012C68000100000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10001182C68000100000018 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A10006012C68000100000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10001012C68000100000001 /* PrendsEtRendsApp.swift in Sources */,
+				A10001022C68000100000002 /* LoanType.swift in Sources */,
+				A10001032C68000100000003 /* MediaItem.swift in Sources */,
+				A10001042C68000100000004 /* LoanItem.swift in Sources */,
+				A10001052C68000100000005 /* FilterEnums.swift in Sources */,
+				A10001062C68000100000006 /* AppLanguage.swift in Sources */,
+				A10001072C68000100000007 /* AppStrings.swift in Sources */,
+				A10001082C68000100000008 /* Colors.swift in Sources */,
+				A10001092C68000100000009 /* StorageService.swift in Sources */,
+				A100010A2C6800010000000A /* NotificationService.swift in Sources */,
+				A100010B2C6800010000000B /* FirebaseService.swift in Sources */,
+				A100010C2C6800010000000C /* AudioRecorderPlayer.swift in Sources */,
+				A100010D2C6800010000000D /* ContactPicker.swift in Sources */,
+				A100010E2C6800010000000E /* MediaPicker.swift in Sources */,
+				A100010F2C6800010000000F /* LoanViewModel.swift in Sources */,
+				A10001102C68000100000010 /* StatusBadgeView.swift in Sources */,
+				A10001112C68000100000011 /* LanguageSelectorView.swift in Sources */,
+				A10001122C68000100000012 /* SummaryHeaderView.swift in Sources */,
+				A10001132C68000100000013 /* AudioPlayerCardView.swift in Sources */,
+				A10001142C68000100000014 /* LoanCardView.swift in Sources */,
+				A10001152C68000100000015 /* DashboardView.swift in Sources */,
+				A10001162C68000100000016 /* CreateEditLoanView.swift in Sources */,
+				A10001172C68000100000017 /* DetailLoanView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A10005002C6800010000000A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A10005002C6800010000000B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A10005012C6800010000000A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PrendsEtRends/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aistudio.prendsetrends.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A10005012C6800010000000B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PrendsEtRends/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aistudio.prendsetrends.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A10005002C68000100000000 /* Build configuration list for PBXProject "PrendsEtRends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10005002C6800010000000A /* Debug */,
+				A10005002C6800010000000B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A10005012C68000100000001 /* Build configuration list for PBXNativeTarget "PrendsEtRends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10005012C6800010000000A /* Debug */,
+				A10005012C6800010000000B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = A10000002C68000000000000 /* Project object */;
+}

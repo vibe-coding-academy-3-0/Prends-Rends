@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:translateX="27"
+        android:translateY="27">
+        <!-- Center 54x54 icon inside 108x108 canvas -->
+        <!-- Package / Box icon -->
+        <path
+            android:fillColor="#FFFFFFFF"
+            android:pathData="M20,12h14c1.1,0 2,0.9 2,2v20c0,1.1 -0.9,2 -2,2H20c-1.1,0 -2,-0.9 -2,-2V14c0,-1.1 0.9,-2 2,-2z M22,16v16h10V16H22z" />
+        <!-- Top right arrow (Lending) -->
+        <path
+            android:fillColor="#FF2DD4BF"
+            android:pathData="M10,20 L38,10 M38,10 L30,8 M38,10 L36,18"
+            android:strokeColor="#FF2DD4BF"
+            android:strokeWidth="3.5"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <!-- Bottom left arrow (Borrowing) -->
+        <path
+            android:fillColor="#FF38BDF8"
+            android:pathData="M44,34 L16,44 M16,44 L24,46 M16,44 L18,36"
+            android:strokeColor="#FF38BDF8"
+            android:strokeWidth="3.5"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <!-- Hand / Heart overlay dot -->
+        <path
+            android:fillColor="#FFFBBF24"
+            android:pathData="M27,24m-4,0a4,4 0 1,1 8,0a4,4 0 1,1 -8,0" />
+    </group>
+</vector>
