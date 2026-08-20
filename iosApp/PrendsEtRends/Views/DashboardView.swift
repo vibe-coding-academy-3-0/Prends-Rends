@@ -248,7 +248,7 @@ private struct TabButton: View {
                 .foregroundColor(isSelected ? .white : Color.appTextSecondaryLight)
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 9)
-                .background(isSelected ? Color.primaryIndigo : Color.transparent)
+                .background(isSelected ? Color.primaryIndigo : Color.clear)
                 .cornerRadius(22)
         }
     }

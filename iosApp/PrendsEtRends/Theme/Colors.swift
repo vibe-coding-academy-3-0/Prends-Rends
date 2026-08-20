@@ -51,6 +51,8 @@ public extension Color {
     static let statusRed = Color(hex: 0xE11D48)
     static let statusRedContainer = Color(hex: 0xFFF1F2)
     static let statusRedBorder = Color(hex: 0xFECDD3)
+
+    static let transparent = Color.clear
 }
 
 public enum AppThemeMode: String, CaseIterable, Identifiable {
